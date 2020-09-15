@@ -1,78 +1,128 @@
+
 body {
-	background-color: #0b2327;
+  background-color: #0b2327;
 }
 
-@font-face {
+@font-face{
 	font-family: "Open Sans";
-	src: url('../fonts/OpenSans-Light.ttf');
+	src:url('../fonts/OpenSans-Light.ttf');
 }
 
-html * {
+html,body{
+  height:100%;
+  font-family: "Open Sans";
+}
+
+nav{
+	position: absolute;
+	z-index: 100;
+	top: 0;
 	width: 100%;
-	height: 100%;
-	font-family: "Open Sans";
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;
+	display: flex;
+	padding: 1rem 1rem;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.navbardiv{
+	padding-right: 0;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+
 }
 
-.navbar {
+.navbar{
 	height: 30px;
 	width: 104.96px;
+	vertical-align: middle;
+	border-style: none;
+	box-sizing: border-box;
 }
 
-.textoemcimadotextodabarralink {
-	font-size: 1.20rem;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+.textoemcimadotextodabarralink{
+	font-size: 1.75rem;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.25);
 	color: #ab9a1d!important;
 	font-family: inherit;
 	font-weight: 400;
 	line-height: 1.5;
 	display: inline-block;
 	text-align: center;
+	padding-top:  10px;
 	width: 100%;
-	height: 10px;
-	margin: 0 auto;
-	padding:0 auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
 	align-content: center;
 }
 
-.textoemcimabarralink {
-	color: #ada2a2;
-	font-size: 0.80rem;
+.textoemcimabarralink{
+	color:#ada2a2;
+	font-size: 1.25rem;
 	display: block;
 	text-align: center;
+
 }
 
-input {
+input{
 	width: 350px;
-	text-align: center;
-	padding: 15px 20px;
-	border-radius: 6px;
-	font-size: 18px;
-	display: block;
-	margin: 0 auto;
-	height: 10px;
-	position: center;
-	outline: none;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    position: center;
+    outline: none;
 }
 
-
-.linkdownloadvideo {
+.linkdownloadvideo{
 	margin: 60px auto;
 	display: block;
 	position: center;
 }
 
-form * {
+/*
+ Tudo dentro do formulário. Inluindo filhos > filhos
+*/
+
+form *{
 	font-family: "Open Sans";
 }
 
-input.submit {
-	margin-top: 0px;
+.submit{
 	font-family: Arial;
 	font-size: 26px;
 	background-color: #f5365c;
-	color: white;
+	color:white;
 	font-style: bold;
 	text-transform: uppercase;
 	font-weight: 700;
-	height: 60px;
+	margin-bottom: 60px;
 }
+
+
+/*
+Quando utilizamos o important o nível de especificação deixa de existir.
+Quando mais de 1 estão utilizando o important então o nível de especificação volta a contar.
+
+.box p{
+	font-family: "Open Sans" !important;
+}
+
+.text{
+	font-family: tahoma !important;
+}
+*/

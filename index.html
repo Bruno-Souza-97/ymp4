@@ -1,83 +1,97 @@
 <!doctype html>
 <html>
 
-<head>
-  <title>YTMP4BR - Youtube downloader para MP4 e MP3.</title>
-  <meta charset="utf-8" />
-  <meta name="description"
-    content="Ymp4 é o downloader de vídeo online do Youtube. Salve vídeos do Youtube em arquivos mp4 e mp3 no seu dispositivo. Youtube mp4 &amp; mp3 conversor.">
-  <!--Importanto através de URL externa-->
-  <!--
+  <head>
+    <title>YTMP4BR - Youtube downloader para MP4 e MP3.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ymp4 é o downloader de vídeo online do Youtube. Salve vídeos do Youtube em arquivos mp4 e mp3 no seu dispositivo. Youtube mp4 &amp; mp3 conversor.">
+    <!--Importanto através de URL externa-->
+    <!--
          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
          -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link type="image/ico" rel="icon" href="https://ymp4.download/favicon.ico">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link type="image/ico" rel="icon" href="https://ymp4.download/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
 
-    $(document).ready(function () {
+$(document).ready(function(){
 
-      $('#button').click(function (e) {
+    $('#button').click(function(e) {  
         var inputvalue = $("#idcodigovideo").val();
-        window.location.replace("https://www.yt-download.org/api/button/videos/" + inputvalue);
+        window.location.replace("https://www.yt-download.org/api/button/videos/"+inputvalue);
 
-      });
     });
-  </script>
-</head>
+});
+</script> 
+  </head>
 
-<body>
-  <!--
+  <body>
+    <!--
          <div class="box">
          	<p>Olá mundo</p>
          </div>
          -->
-  <div class="navbardiv">
-    <nav>
-      <a href="https://ymp4.github.io"> <img class="navbar" src="https://ymp4.download/img/ymp4-white-long.png"
-          alt="Youtube video baixador mp4">
-      </a>
-    </nav>
-  </div>
-  <div class="textoemcimadotextodabarralink">
-    <h1>Baixador de vídeo MP4 do YouTube</h1>
-  </div>
-  <div class="textoemcimabarralink">
-    <h2>Baixe vídeos do Youtube como arquivos MP4.</h2>
-  </div>
-  <form method="GET" action="https://www.yt-download.org/api/button/videos/" id="form_id">
-    <div class="divURLYT">
-      <input id="dlURL" type="text" name="url" value="" class="URLYT" placeholder="1º — Insira o link do vídeo aqui!">
+    <div class="navbardiv">
+      <nav>
+        <a href="https://ymp4.github.io"> <img class="navbar" src="https://ymp4.download/img/ymp4-white-long.png" alt="Youtube video baixador mp4">
+        </a>
+      </nav>
     </div>
-    <script>
-      $('.URLYT').on('change', function () {
+    <div class="textoemcimadotextodabarralink">
+      <h1>Baixador de vídeo MP4 do YouTube</h1>
+    </div>
+    <div class="textoemcimabarralink">
+      <h2>Baixe vídeos do Youtube como arquivos MP4.</h2>
+    </div>
+    <form method="GET" action="https://www.yt-download.org/api/button/videos/" id="form_id">
+      <div class="divURLYT">
+        <input id="dlURL" type="text" name="url" value="" class="URLYT" placeholder="1º Insira o link do vídeo aqui!">
+      </div>
+      <script>
+        $('.URLYT').on('change', function() {
 
-        var newval = '',
-          $this = $(this);
+          var newval = '',
+            $this = $(this);
 
-        if (newval = $this.val().match(/(\?|&)v=([^&#]+)/)) {
+          if (newval = $this.val().match(/(\?|&)v=([^&#]+)/)) {
 
-          $this.val(newval.pop());
+            $this.val(newval.pop());
 
-        } else if (newval = $this.val().match(/(\.be\/)+([^\/]+)/)) {
+          } else if (newval = $this.val().match(/(\.be\/)+([^\/]+)/)) {
 
-          $this.val(newval.pop());
+            $this.val(newval.pop());
 
-        } else if (newval = $this.val().match(/(\embed\/)+([^\/]+)/)) {
+          } else if (newval = $this.val().match(/(\embed\/)+([^\/]+)/)) {
 
-          $this.val(newval.pop().replace('?rel=0', ''));
+            $this.val(newval.pop().replace('?rel=0', ''));
 
-        }
+          }
 
+        });
+
+      </script>
+      <div>
+        <input type="text" id="idcodigovideo" name="" class="linkdownloadvideo" placeholder="2º Cole o código aqui!">
+        <input id="button" type="button" class="submit" value="Baixar">
+        </form>
+      </div>
+      <!--
+  <script>
+      var form = document.getElementById('form_id');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+         var term = document.getElementById('idcodigovideo').val;
+        window.location.href = "https://www.yt-download.org/api/button/videos/" + term;
       });
+  </script>
+-->
+    </form>
 
-    </script>
-    <div>
-      <input type="text" id="idcodigovideo" name="" class="linkdownloadvideo" placeholder="2º — Cole o código aqui!">
-      <input id="button" type="button" class="submit" value="Baixar">
-  </form>
-  </div>
-  </form>
-</body>
+
+  </body>
+
+
+
 
 </html>
