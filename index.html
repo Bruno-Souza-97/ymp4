@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     $('#button').click(function(e) {  
         var inputvalue = $("#idcodigovideo").val();
-        window.location.replace("https://www.yt-download.org/api/button/videos/"+inputvalue);
+        window.location.replace("https://api.vevioz.com/@api/button/videos/"+inputvalue);
 
     });
 });
@@ -44,7 +44,7 @@ $(document).ready(function(){
     <div class="textoemcimabarralink">
       <h2>Baixe vídeos do Youtube como arquivos MP4.</h2>
     </div>
-    <form method="GET" action="https://www.yt-download.org/api/button/videos/" id="form_id">
+    <form method="GET" action="https://api.vevioz.com/@api/button/videos/" id="form_id">
       <div class="divURLYT">
         <input id="dlURL" type="text" name="url" value="" class="URLYT" placeholder="1º Insira o link do vídeo aqui!">
       </div>
