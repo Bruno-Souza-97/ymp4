@@ -43,8 +43,10 @@ nav{
 }
 
 .navbar{
-	'height: 30px;
-	'width: 104.96px;
+	/*
+	height: 30px;
+	width: 104.96px;
+	*/
 	height: 96px;
 	width: 96px;
 	vertical-align: middle;
