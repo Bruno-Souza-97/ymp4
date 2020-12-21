@@ -46,9 +46,11 @@ nav{
 	/*
 	height: 30px;
 	width: 104.96px;
-	*/
 	height: 96px;
 	width: 96px;
+	*/
+	width: 10%;
+	height:10%;
 	vertical-align: middle;
 	border-style: none;
 	box-sizing: border-box;
@@ -81,7 +83,7 @@ nav{
 }
 
 input{
-	width: 350px;
+    width: 350px;
     text-align: center;
     padding: 15px 20px;
     border-radius: 6px;
