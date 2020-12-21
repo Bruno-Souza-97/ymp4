@@ -53,6 +53,7 @@ nav{
 	width: 80%;
 	height: 80%;
 	margin: 0 auto;
+	display: inline block;
 	vertical-align: middle;
 	border-style: none;
 	box-sizing: border-box;
