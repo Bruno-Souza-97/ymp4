@@ -1,6 +1,6 @@
 
 body {
-  background-color: #0b2327;
+  background-image: linear-gradient(#0b2327,#040f11);
 }
 
 @font-face{
@@ -9,12 +9,15 @@ body {
 }
 
 html,body{
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
   font-family: "Open Sans";
+  margin: 0 auto;
 }
 
 nav{
+	margin-left: 50%;
+/*
 	position: center;
 	z-index: 100;
 	top: 0;
@@ -28,18 +31,19 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 	box-sizing: border-box;
+*/
 }
 .navbardiv{
-	padding-right: 0;
-	padding-left: 0;
+	
 	display: flex;
-	flex-wrap: wrap;
+
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	box-sizing: border-box;
+
+	
+
+	
+
+	
 
 }
 
@@ -50,34 +54,29 @@ nav{
 	height: 96px;
 	width: 96px;
 	*/
+	margin-top: 15%;
 	width: 80%;
 	height: 80%;
-	margin: 0 auto;
-	display: inline block;
-	vertical-align: middle;
-	border-style: none;
-	box-sizing: border-box;
+	margin-left: -30%;
 }
 
 .textoemcimadotextodabarralink{
-	font-size: 1.75rem;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.25);
-	color: #ab9a1d!important;
-	font-family: inherit;
-	font-weight: 400;
-	line-height: 1.5;
+	font-size: 1.60rem;
+	text-shadow: 5px 5px 5px rgba(0,0,0,.90);
+	color: #ab9a1d;
+	
+	
+	
 	display: inline-block;
 	text-align: center;
-	padding-top:  10px;
+	
 	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-	align-content: center;
+	
+	
 }
 
 .textoemcimabarralink{
+	text-shadow: 5px 5px 5px rgba(0,0,0,.90);
 	color:#ada2a2;
 	font-size: 1.25rem;
 	display: block;
@@ -114,12 +113,14 @@ form *{
 .submit{
 	font-family: Arial;
 	font-size: 26px;
+	text-shadow: 3px 3px 3px rgba(0,0,0,.95);
 	background-color: #f5365c;
 	color:white;
 	font-style: bold;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-bottom: 60px;
+	margin-top: 2%;
+	
 }
 
 
