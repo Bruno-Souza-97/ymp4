@@ -75,7 +75,7 @@ nav{
 
 .textoemcimadotextodabarralink{
 	font-size: 1.60rem;
-	text-shadow: 5px 5px 5px rgba(0,0,0,.90);
+	text-shadow: 3px 3px 1px rgba(0,0,0,.90);
 	color: #ab9a1d;
 	
 	
@@ -89,7 +89,7 @@ nav{
 }
 
 .textoemcimabarralink{
-	text-shadow: 5px 5px 5px rgba(0,0,0,.90);
+	text-shadow: 3px 3px 1px rgba(0,0,0,.90);
 	color:#ada2a2;
 	font-size: 1.25rem;
 	display: block;
