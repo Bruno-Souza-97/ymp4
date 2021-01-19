@@ -1,6 +1,19 @@
 
 body {
-  background-image: linear-gradient(#0b2327,#040f11);
+	background: linear-gradient(-45deg, #124e58,#0F152B,#0D3015);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @font-face{
@@ -83,17 +96,22 @@ nav{
 	text-align: center;
 
 }
-
+.URLYT{
+	max-width: 356px;
+	cursor: text;
+}
 input{
-    width: 70%;
+	width: 70%;
+	max-width: 200px;
     text-align: center;
-    padding: 15px 20px;
+    padding: 5px;
     border-radius: 6px;
     font-size: 18px;
     display: block;
     margin: 0 auto;
     position: center;
-    outline: none;
+	outline: none;
+	cursor: pointer;
 }
 
 .linkdownloadvideo{
