@@ -101,8 +101,8 @@ nav{
 	cursor: text;
 }
 input{
-	width: 70%;
-	max-width: 200px;
+    width: 70%;
+    max-width: 200px;
     text-align: center;
     padding: 5px;
     border-radius: 6px;
@@ -110,8 +110,8 @@ input{
     display: block;
     margin: 0 auto;
     position: center;
-	outline: none;
-	cursor: pointer;
+    outline: none;
+    cursor: pointer;
 }
 
 .linkdownloadvideo{
@@ -137,7 +137,7 @@ form *{
 	font-style: bold;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-top: 2%;
+	margin-top: 10px;
 	
 }
 
