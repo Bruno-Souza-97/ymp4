@@ -72,6 +72,8 @@ html,body{
 	display: inline-block;
 	position: relative;
 	text-align:center;
+	margin-left:0;
+	margin-right:0;
 	
 }
 
