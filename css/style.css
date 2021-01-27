@@ -34,9 +34,7 @@ nav{
 	display: inline-block;
 	text-align: center;
 }
-/*.navbardiv{
-	width: 100%;
-	height: 150px;
+.navbardiv{
 	display: inline-block;
 	text-align: center;
 	
@@ -46,7 +44,7 @@ nav{
 	
 
 }
-*/
+
 .navbar{
 	/*
 	height: 30px;
