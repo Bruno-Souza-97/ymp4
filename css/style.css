@@ -104,6 +104,10 @@ input{
     cursor: pointer;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
+
 .linkdownloadvideo{
 	margin: 60px auto;
 	display: block;
